@@ -3,6 +3,7 @@ package System.controller;
 
 import System.model.User;
 import System.service.UserService;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,4 +22,11 @@ public class UserControler{
         return userService.getAllUsers();
     }
 
+
+
+    @Test
+
+    public void oneTest(){
+        System.out.println("тест успешно залит");
+    }
 }
